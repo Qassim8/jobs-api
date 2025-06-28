@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: jobs-api
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 18
